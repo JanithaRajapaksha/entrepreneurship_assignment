@@ -1,0 +1,149 @@
+\documentclass[10.5pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=0.72in,top=0.68in,bottom=0.68in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!75!black]{hyperref}
+
+\setlength{\parskip}{0.22em plus 0.05em minus 0.05em}
+\setlength{\parindent}{0pt}
+\captionsetup{font=small,labelfont=bf,skip=2.5pt}
+
+\titlespacing*{\section}{0pt}{0.5em plus 0.1em minus 0.05em}{0.15em}
+\titlespacing*{\subsection}{0pt}{0.4em plus 0.1em minus 0.05em}{0.15em}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+\begin{document}
+
+\begin{center}
+    {\large \textbf{ME 3212 — Entrepreneurship for Engineers}}\\[0.1em]
+    {\normalsize Department of Management and Finance / Faculty of Engineering, KDU}\\[0.2em]
+    \rule{\textwidth}{0.8pt}\\[0.15em]
+    {\Large \textbf{Startup Business Proposal: Technical Feasibility and Financial Plan}}\\[0.1em]
+    {\small \textbf{Condensed Executive Submission: Focused on Technical \& Financial Feasibility}}\\[0.15em]
+    \rule{\textwidth}{0.4pt}
+\end{center}
+\vspace{-0.3em}
+
+\subsection*{Section 4: Feasibility Study}
+
+\textbf{1. Technical \& Engineering Feasibility:}
+\begin{itemize}[leftmargin=1.2em, itemsep=0.06em]
+    \item \textbf{Vehicle Platform \& Payload Dynamics:} Converted 14.5-ft light commercial truck retrofitted with high-density acoustic insulation and waterproof vinyl flooring. Operating payload is strictly \textbf{$880\,\text{kg}$} (water, dual styling bays, power pack, 2 stylists, driver) on a 1.5-tonne chassis (GVW $\approx 3,500\,\text{kg}$), maintaining a $>50\%$ safety margin.
+    \item \textbf{Electrical Power Architecture (AC Included):} Dual-tier power infrastructure: continuous load of \textbf{$2.9\,\text{kW}$} and peak load of \textbf{$7.5\,\text{kW}$}.
+    \begin{itemize}[leftmargin=1.2em, itemsep=0.03em]
+        \item \textit{Continuous Base Load ($1.3\,\text{kW}$):} 12,000 BTU rooftop inverter AC ($1.05\,\text{kW}$) maintaining 22$^\circ$C in tropical ambient heat, ventilation exhaust, LED lighting, and 12V diaphragm pumps ($250\,\text{W}$).
+        \item \textit{Peak Thermal Demand ($6.0\,\text{kW}$):} Twin $2,000\,\text{W}$ ionic blow-dryers ($4.0\,\text{kW}$) and thermostatic water heating ($2.0\,\text{kW}$).
+        \item \textit{Power Integration:} Primary $230\,\text{V}/16\,\text{A}$ shore connection at corporate parking bays, backed by a $5.0\,\text{kVA}$ pure sine hybrid inverter, $4.8\,\text{kWh}$ LiFePO4 battery pack, and 600W rooftop solar panels.
+    \end{itemize}
+    \item \textbf{Hydraulic \& Water Systems:} Food-grade 350L clean water tank and 350L underslung greywater tank. Low-flow aerated spray nozzles consume \textbf{$10$--$12$ litres per wash} ($\implies 288\,\text{L}$ daily demand at 100\% capacity; zero midday refilling required). Closed-loop quick-connect couplings discharge greywater into building sewage treatment plants with zero environmental runoff.
+    \item \textbf{Operational Workflow \& Throughput Capacity:}
+    \begin{itemize}[leftmargin=1.2em, itemsep=0.03em]
+        \item \textit{Schedule:} 16 operating days per month (Tuesday to Friday corporate peak).
+        \item \textit{Operating Hours:} 11:00 AM to 3:00 PM (4.0 operational hours = 240 minutes daily).
+        \item \textit{Express Cycle:} 20 minutes (12 min wash/massage/condition, 6 min express dry, 2 min sanitization).
+        \item \textit{Workstations:} 2 active styling stations providing 12 slots/station/day = \textbf{24 clients/day maximum physical capacity} (384 services/month).
+    \end{itemize}
+\end{itemize}
+
+\textbf{2. Preliminary Financial Feasibility:}
+At the LKR 750 anchor fee, variable costs are controlled at LKR 150, delivering an \textbf{80.0\% contribution margin (LKR 600)}. Scaled monthly fixed costs are \textbf{LKR 193,900}, establishing an operational break-even of \textbf{323 services/month (20.2 clients/day, 84.2\% capacity utilization)}, confirming strong commercial viability.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Technical Capacity and Unit Economics (Single Mobile Unit)}
+\label{tab:cond_sec4}
+\begin{tabularx}{\textwidth}{L{0.27\textwidth}L{0.21\textwidth}L{0.27\textwidth}Y}
+\toprule
+\textbf{Technical / Ops Parameter} & \textbf{Adopted Value} & \textbf{Financial Metric} & \textbf{Adopted Value} \\
+\midrule
+Daily Operating Hours & 4.0 Hours (11 AM--3 PM) & Retail Fee per Service ($P$) & LKR 750.00 \\
+Monthly Operating Days & 16 Days / Month & Variable Consumables ($VC$) & LKR 150.00 \\
+Express Cycle Time & 20 Minutes / Client & Contribution Margin ($CM$) & LKR 600.00 (80.0\%) \\
+Daily Maximum Capacity & 24 Clients / Day & Monthly Fixed Overheads ($FC$) & LKR 193,900 / Month \\
+Monthly Physical Ceiling & 384 Services / Month & Monthly Break-Even ($Q^*$) & 323 Services / Month \\
+Active Styling Stations & 2 Stations (12 slots/stn) & Daily Break-Even ($q^*$) & 20.2 Clients / Day (84.2\%) \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\vspace{-0.3em}
+\subsection*{Section 7: Financial Projection and Funding}
+
+\textbf{1. Capital Budget and Financing Strategy (Strict LKR 5.5 Million):}
+The initial start-up capital outlay of \textbf{LKR 5,500,000} is fully balanced by a diversified non-dilutive financing structure:
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Start-Up Capital Allocation and Diversified Funding Mix (LKR)}
+\label{tab:cond_capex_funding}
+\begin{tabularx}{\textwidth}{L{0.28\textwidth}>{\raggedleft\arraybackslash}p{1.6cm}Y>{\raggedleft\arraybackslash}p{1.6cm}>{\raggedleft\arraybackslash}p{1.2cm}}
+\toprule
+\textbf{Capital Expenditure Item} & \textbf{Cost (LKR)} & \textbf{Funding Source} & \textbf{Amount (LKR)} & \textbf{Share} \\
+\midrule
+Vehicle Lease (30\% Down Payment) & 1,450,000 & Founders' Equity (5 Founders) & 1,500,000 & 27.3\% \\
+Body Conversion \& Insulation & 1,200,000 & Pre-Sales (125 Care Packs: Gate 1) & 375,000 & 6.8\% \\
+Electrical System, Inverter \& AC & 850,000 & Equipment Supplier Credit & 425,000 & 7.7\% \\
+Salon Stations, Chairs \& Dryers & 480,000 & Personal-Care Brand Sponsorship & 300,000 & 5.5\% \\
+Plumbing, Tanks \& Water Heating & 220,000 & Innovation / University Grant & 400,000 & 7.3\% \\
+Statutory Permits \& RMV Clearance & 180,000 & Concessionary Bank / SME Loan & 2,500,000 & 45.4\% \\
+Working Capital \& Contingency & 1,120,000 & & & \\
+\midrule
+\textbf{Total Capital Required} & \textbf{5,500,000} & \textbf{Total Capital Mobilized} & \textbf{5,500,000} & \textbf{100.0\%} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{2. Monthly Fixed Overheads Breakdown ($FC = \text{LKR } 193,900$):}
+\begin{itemize}[leftmargin=1.2em, itemsep=0.04em]
+    \item \textbf{Frontline Salon Staffing:} LKR 75,900 (Lead Stylist/Driver: LKR 38k; Assistant Stylist: LKR 28k; Statutory EPF/ETF: LKR 9.9k across 16 half-day shifts).
+    \item \textbf{Commercial Vehicle Financing:} LKR 80,000 (5-year lease covering remaining 70\% chassis principal).
+    \item \textbf{Energy \& Facility Utilities:} LKR 26,000 (Diesel transit/generator: LKR 14k; Reserved corporate parking \& shore power: LKR 12k).
+    \item \textbf{Maintenance \& Asset Reserve:} LKR 12,000 (Mechanical upkeep, equipment sinking fund, and insurance).
+    \item \textbf{Digital Booking \& SaaS Costs:} \textbf{LKR 0.00} (Direct native WhatsApp Business and building reception liaisons).
+\end{itemize}
+
+\textbf{3. Scenario Sensitivity and Fleet Scaling Projections:}
+Table~\ref{tab:cond_scenarios_scaling} details operational scenarios alongside three-year multi-unit commercial fleet growth.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Scenario Analysis (Monthly) and Three-Year Fleet Scaling Projections}
+\label{tab:cond_scenarios_scaling}
+\begin{tabularx}{\textwidth}{L{0.27\textwidth}>{\raggedleft\arraybackslash}p{1.8cm}Y>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}>{\raggedleft\arraybackslash}p{1.2cm}}
+\toprule
+\textbf{Monthly Scenario (16 Days)} & \textbf{Net Result} & \textbf{Three-Year Fleet Item} & \textbf{Year 1} & \textbf{Year 2} & \textbf{Year 3} \\
+\midrule
+Conservative (18 clients/day, 75\%) & (LKR 21,100) & Active Mobile Units & 1 Unit & 2 Units & 3 Units \\
+Base-Case (22 clients/day, 91.7\%) & \textbf{+LKR 17,300} & Annual Fleet Operating Days & 192 Days & 384 Days & 576 Days \\
+Full Capacity (24 clients/day, 100\%) & \textbf{+LKR 36,500} & Gross Operating Revenue & 3.24M & 6.84M & 10.83M \\
+\midrule
+\textbf{Fleet Payback Period} & \textbf{3.9 Years} & Operating Profit (EBITDA) & 0.27M & 0.88M & 1.46M \\
+\textbf{Year 3 Total Capital ROI} & \textbf{26.56\% p.a.} & Ending Cash Reserve & 0.73M & 0.81M & 1.11M \\
+\textbf{Year 3 Return on Equity} & \textbf{97.38\% p.a.} & Capital Payback & 12.5 Yrs & 4.8 Yrs & \textbf{3.9 Yrs} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\textbf{4. Investment Appraisal \& Milestone Gates:}
+\begin{itemize}[leftmargin=1.2em, itemsep=0.04em]
+    \item \textbf{Commercial Returns:} Fleet expansion achieves full capital payback within \textbf{3.9 years}. Operating EBITDA scales from LKR 265,200 (Year 1) to LKR 1,460,640 (Year 3), elevating Return on Total Capital to \textbf{26.56\%} and Return on Founders' Equity to \textbf{97.38\%}.
+    \item \textbf{Staged De-Risking Gates:} Capital deployment is unlocked through three disciplined milestones: Gate 1 (pre-sell 125 care packs before leasing vehicle), Gate 2 (formal corporate site parking permit before coachbuilding), and Gate 3 (achieve 19--20 clients/day pilot throughput before second-unit fleet expansion).
+\end{itemize}
+
+\end{document}

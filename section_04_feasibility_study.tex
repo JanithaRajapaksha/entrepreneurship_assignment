@@ -173,17 +173,18 @@ The primary engineering challenge is integrating a high-power personal-care salo
 Operating two simultaneous styling stations results in an estimated peak demand of approximately $7.5\,\text{kW}$ (primarily from two $2,000\,\text{W}$ ionic blow dryers and water heating), which averages to an effective continuous operating load of $\approx 2.9\,\text{kW}$ under standard duty cycles. To handle this load cleanly without electrical overload, the vehicle connects directly to a $230\,\text{V}/16\,\text{A}$ shore-power hookup at partner corporate parking bays, backed by a $5.0\,\text{kVA}$ hybrid inverter and auxiliary lithium battery pack for operational flexibility.
 
 \paragraph{2. Water Sizing and Payload Dynamics:}
-A standard professional hair wash and conditioning cycle consumes \textbf{$10$ to $12$ litres of water}, in contrast to full-body showers requiring $25$ litres.
+A standard professional hair wash and conditioning cycle consumes \textbf{$10$ to $12$ litres of water}, in contrast to full-body showers requiring $25$ litres. Operating across the 4-hour peak window ($11{:}00\,\text{AM}$ to $3{:}00\,\text{PM}$) at full capacity ($24$ services per day):
 \begin{equation}
     \text{Daily Water Demand (24 services)} = 24\text{ services} \times 12.0\,\text{L} = 288\,\text{litres} \ (\approx 288\,\text{kg}).
 \end{equation}
-An onboard 350-litre freshwater tank (polyethylene, longitudinally baffled) combined with a 350-litre underslung greywater tank ensures full-day operational capacity without midday refilling. Operating payload (water, twin salon chairs, basins, electrical batteries, two stylists, and driver) totals approximately \textbf{$880\,\text{kg}$}, easily supported by a standard 1.5-tonne light commercial chassis (Gross Vehicle Weight rating $\approx 3,500\,\text{kg}$) with a generous safety margin ($> 50\%$).
+An onboard 350-litre freshwater tank (polyethylene, longitudinally baffled) combined with a 350-litre underslung greywater tank comfortably covers the entire 4-hour operating window without requiring midday replenishment. Operating payload (water, twin salon chairs, basins, electrical batteries, two stylists, and driver) totals approximately \textbf{$880\,\text{kg}$}, easily supported by a standard 1.5-tonne light commercial chassis (Gross Vehicle Weight rating $\approx 3,500\,\text{kg}$) with a generous safety margin ($> 50\%$).
 
 \paragraph{3. Operational Workflow and Service Capacity:}
-The mobile unit operates with two active washing/styling stations:
+The mobile unit operates with two active washing/styling stations configured for the high-density corporate lunch window:
 \begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
-    \item \textbf{Cycle Time:} 25 minutes total per customer (12 min wash, scalp massage, condition; 10 min blow dry and brush; 3 min sanitization and basin wipedown).
-    \item \textbf{Throughput Capacity:} Operating from 8:00 AM to 5:30 PM (8.0 effective operational hours with staggered stylist lunch breaks) yields a \textbf{maximum physical capacity of 36 sessions per day} (18 sessions per station). At a realistic 65\% target capacity utilization, the venture serves \textbf{23 to 24 customers per operating day}.
+    \item \textbf{Operating Schedule:} 16 operating days per month (Tuesday to Friday, 4 corporate days per week), operating strictly between \textbf{11:00 AM and 3:00 PM} (4.0 operational hours = 240 minutes per day) to capture peak lunch and midday grooming demand.
+    \item \textbf{Cycle Time:} 20 minutes total per customer (12 min wash, scalp massage, and condition; 6 min express blow-dry and brush; 2 min rapid sanitization, fresh towel change, and basin wipedown).
+    \item \textbf{Throughput Capacity:} With two active stations, each station provides 12 available slots per day ($240\,\text{min} / 20\,\text{min}$), establishing a \textbf{maximum physical capacity of 24 sessions per day} (12 sessions per station). Across 16 operating days, the vehicle's monthly ceiling is \textbf{384 services per month}. At a target capacity utilization of 85\%--90\%, the venture serves \textbf{20 to 22 customers per operating day} (320 to 352 services per month).
 \end{itemize}
 
 % ------------------------------------------------------------------------------
@@ -219,36 +220,35 @@ Contingency Allowance (10\%) & 470,000 & Reserve for unforeseen conversion and e
 \end{table}
 
 \subsubsection{Unit Economics and Operational Break-Even Screening}
-Adopting the target customer fee of \textbf{LKR 750 per standard service} across 25 operating days per month:
+Adopting the target customer fee of \textbf{LKR 750 per standard service} across \textbf{16 operating days per month} ($11{:}00\,\text{AM}$ to $3{:}00\,\text{PM}$):
 \begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
     \item \textbf{Variable Cost per Service ($VC$):} Bulk salon-grade shampoo and conditioner (25--30\,mL) = LKR 60; disposable sanitized neck strips and towel laundering/drying = LKR 40; freshwater ($10\text{--}12\,\text{L}$) and battery charging electricity ($0.5\,\text{kWh}$) = LKR 30; sanitization wipes and station consumables = LKR 20. Total variable cost is strictly controlled at $VC = \mathbf{\text{LKR } 150}$ per customer.
     \item \textbf{Contribution Margin per Service ($CM$):}
     \begin{equation}
         CM = \text{Selling Price} - VC = \text{LKR } 750 - \text{LKR } 150 = \mathbf{\text{LKR } 600} \ (80.0\%\text{ contribution margin}).
     \end{equation}
-    \item \textbf{Monthly Fixed Operating Costs ($FC$):} To support the competitive LKR 750 price point, the operational staffing structure is lean and efficient:
+    \item \textbf{Monthly Fixed Operating Costs ($FC$):} Because operational hours are focused strictly on a 4-hour peak window (64 hours/month), staffing and overheads are structured as specialized part-time corporate shifts, with appointment scheduling handled directly via zero-cost native WhatsApp Business and reception concierge liaisons (eliminating recurring SaaS gateway fees):
     \begin{itemize}[leftmargin=1.2em, itemsep=0.1em]
-        \item Lead Stylist / Mobile Operations Driver (dual role: vehicle transit and senior stylist): LKR 70,000.
-        \item Assistant Stylist / Cosmetologist: LKR 55,000.
-        \item Staff statutory contributions (EPF/ETF at 15\%): LKR 18,750.
+        \item Lead Stylist / Mobile Operations Driver (16 half-day shifts @ LKR 2,375): LKR 38,000.
+        \item Assistant Stylist / Cosmetologist (16 half-day shifts @ LKR 1,750): LKR 28,000.
+        \item Staff statutory contributions (EPF/ETF at 15\% on basic LKR 66,000): LKR 9,900.
         \item Commercial vehicle lease installment (30\% down on LKR 4.8M valuation): LKR 80,000.
-        \item Diesel fuel (fixed short daily route in Colombo, $\approx 15\text{--}20\,\text{km/day}$): LKR 25,000.
-        \item Reserved commercial parking slot and service access fee at corporate hub: LKR 25,000.
-        \item Preventative maintenance, vehicle insurance, and equipment reserve: LKR 22,000.
-        \item Digital booking gateway (WhatsApp Business API) and local marketing: LKR 14,250.
+        \item Diesel fuel (generator running \& short transit during 4-hr midday peak): LKR 14,000.
+        \item Dedicated corporate parking slot and utility access fee (11:00 AM--3:00 PM bay): LKR 12,000.
+        \item Preventative maintenance, vehicle insurance, and equipment reserve: LKR 12,000.
     \end{itemize}
-    Total monthly fixed operating costs are established at $FC = \mathbf{\text{LKR } 310,000}$ per month.
+    Total monthly fixed operating costs are established at $FC = \mathbf{\text{LKR } 193,900}$ per month.
     \item \textbf{Monthly Break-Even Volume ($Q^*$):}
     \begin{equation}
-        Q^* = \frac{FC}{CM} = \frac{\text{LKR } 310,000}{\text{LKR } 600} = \mathbf{517\text{ services/month}}.
+        Q^* = \frac{FC}{CM} = \frac{\text{LKR } 193,900}{\text{LKR } 600} = \mathbf{323.17 \approx 323\text{ services/month}}.
     \end{equation}
-    \item \textbf{Daily Break-Even Requirement ($q^*_{\text{daily}}$ across 25 operating days):}
+    \item \textbf{Daily Break-Even Requirement ($q^*_{\text{daily}}$ across 16 operating days):}
     \begin{equation}
-        q^*_{\text{daily}} = \frac{517}{25} \approx \mathbf{20.7 \approx 21\text{ customers/day}}.
+        q^*_{\text{daily}} = \frac{323.17}{16} = \mathbf{20.2 \approx 20\text{ customers/day}}.
     \end{equation}
 \end{itemize}
 
-\textbf{Financial Viability Assessment:} With two active stations, serving \textbf{21 customers per day} requires only \textbf{10.5 customers per station per day} (approximately 1.3 clients per station per hour across an 8-hour shift). Against the vehicle's theoretical physical limit of 38 sessions/day (at 25 minutes per session), break-even is achieved at \textbf{55.3\% capacity utilization}. At a realistic base-case utilization of 70\% (26 to 27 customers/day = 660 services/month), the venture generates monthly gross revenue of LKR 495,000 against total operating costs of LKR 409,000, yielding a \textbf{net monthly operating surplus of LKR 86,000}. At 30 customers/day (750 services/month), the monthly operating surplus reaches \textbf{LKR 140,000}, confirming solid financial sustainability at the accessible LKR 750 price point.
+\textbf{Financial Viability Assessment:} With two active stations, serving \textbf{20 customers per day} requires \textbf{10.1 customers per station per day} (approximately 2.5 clients per station per hour across the 4-hour operating window). Against the vehicle's maximum physical limit of 24 sessions/day (at 20 minutes per session), break-even requires \textbf{84.2\% capacity utilization}. At target base-case throughput of 22 customers/day (352 services/month = 91.7\% capacity), the venture generates monthly gross revenue of LKR 264,000 against total costs of LKR 246,700, yielding a \textbf{net monthly operating surplus of LKR 17,300} (+LKR 207,600/year). At full capacity of 24 customers/day (384 services/month), the monthly operating surplus reaches \textbf{LKR 36,500} (+LKR 438,000/year), confirming solid commercial viability without recurring digital software fees.
 
 % ------------------------------------------------------------------------------
 \subsection{Overall Feasibility Assessment and Synthesis}
@@ -265,15 +265,15 @@ Table~\ref{tab:feasibility_scorecard} presents the synthesized feasibility score
 \toprule
 \textbf{Feasibility Dimension} & \textbf{Viability} & \textbf{Key Strength} & \textbf{Critical Management Risk / Condition} \\
 \midrule
-Product/Service Feasibility & \textbf{High} & Validated consumer demand; 23.5\% effective intent. & Service duration must not exceed 25 minutes to preserve lunch-hour promise. \\
+Product/Service Feasibility & \textbf{High} & Validated consumer demand; 23.5\% effective intent. & Service duration must not exceed 20 minutes to preserve lunch-hour promise. \\
 \addlinespace
 Industry / Market Feasibility & \textbf{High} & Low rivalry in mobile niche; captive corporate hubs. & Securing formal parking permissions at Havelock City / WTC is vital. \\
 \addlinespace
-Organizational Feasibility & \textbf{High} & Strong engineering systems background. & Must recruit certified cosmetologists to ensure salon-grade hair care. \\
+Organizational Feasibility & \textbf{High} & Strong engineering systems background. & Must recruit certified cosmetologists for efficient half-day shifts. \\
 \addlinespace
 Operational / Technical & \textbf{Moderate-High} & 880 kg payload; independent hybrid inverter power. & Rigorous electrical load interlocks to prevent peak demand overload. \\
 \addlinespace
-Financial Feasibility & \textbf{High} & Low break-even at LKR 750 fee (21 clients/day, 55.3\% capacity). & Strict monitoring of variable consumable costs (capped at LKR 150/client). \\
+Financial Feasibility & \textbf{High} & Low break-even at LKR 750 fee (20 clients/day, 84.2\% capacity). & Strict appointment scheduling required to sustain 84\%+ capacity in 4-hr slot. \\
 \bottomrule
 \end{tabularx}
 \end{table}
