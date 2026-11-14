@@ -1,0 +1,377 @@
+\documentclass[11pt,a4paper]{article}
+
+% --- Essential Packages ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in,top=1in,bottom=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[
+    colorlinks=true,
+    linkcolor=blue!75!black,
+    citecolor=blue!75!black,
+    urlcolor=blue!75!black,
+    pdftitle={Feasibility Study: Mobile Bathing Station for Working Women in Sri Lanka}
+]{hyperref}
+
+% --- Formatting Configuration ---
+\setlength{\parskip}{0.35em plus 0.1em minus 0.1em}
+\setlength{\parindent}{0pt}
+\captionsetup{font=small,labelfont=bf,skip=5pt}
+
+\titlespacing*{\section}{0pt}{1.0em plus 0.2em minus 0.1em}{0.4em}
+\titlespacing*{\subsection}{0pt}{0.8em plus 0.2em minus 0.1em}{0.3em}
+\titlespacing*{\subsubsection}{0pt}{0.6em plus 0.1em minus 0.1em}{0.2em}
+\titlespacing*{\paragraph}{0pt}{0.5em plus 0.1em minus 0.1em}{0.2em}
+
+% Custom column types for tabularx
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% Suppress all topic/section numbers for draft mode
+\setcounter{secnumdepth}{0}
+
+\begin{document}
+
+\section{Feasibility Study}
+
+This section assesses the feasibility of establishing a mobile bathing station exclusively for working women in Sri Lanka. The service utilizes a converted second-hand light commercial truck equipped with two private bathing cubicles to provide daytime bathing facilities at workplaces where sanitation is inadequate. The service is strictly for personal bathing and hygiene; all secondary domestic chores or extraneous water-intensive utilities are excluded. 
+
+This working draft incorporates recent Sri Lankan market benchmarks (as of November 2026), including commercial truck listings, water-tank and plumbing retail prices, advertised wage benchmarks, and prevailing diesel rates (LKR 397 per litre). All figures remain illustrative planning assumptions requiring empirical supplier quotations and field validation.
+
+% ------------------------------------------------------------------------------
+\subsection{Technical Feasibility}
+
+The technical design relies on established automotive, plumbing, and electrical technologies rather than new inventions. The primary innovation is the mobile delivery model.
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item \textbf{Vehicle Conversion \& Cubicles:} The base platform assumes a second-hand 14.5-ft light commercial box-body truck (e.g., Mitsubishi Canter or Isuzu Elf). The cargo bed is retrofitted into two fully private cubicles ($1.0\,\text{m} \times 1.4\,\text{m}$ each). Each cubicle features an active shower area, dry changing alcove with clothes hooks, non-slip flooring, and secure internal deadbolts for privacy and physical security.
+    \item \textbf{Plumbing \& Water Storage:} An onboard 1,000-litre clean-water tank (e.g., Arpico or S-Lon commercial polyethylene) is paired with a dedicated vehicle-mounted 1,000-litre greywater collection tank mounted low between the chassis rails. Water is pressurized using dual 12V DC diaphragm pumps (primary plus redundant backup). Showers use aerated low-flow showerheads (4.5--5.0\,L/min) with mechanical push-button timed valves to minimize water waste.
+    \item \textbf{Water Heating \& Ventilation:} In lowland industrial zones, ambient daytime water temperatures (26--30$^\circ$C) make water heating optional. However, for cooler hill-country estate deployments, electric or instantaneous LPG shower heaters (retail benchmark LKR 35,000--85,000 each) can be integrated. Continuous forced-air IP65 extractor fans prevent moisture accumulation, and sealed low-voltage LED strip lights ensure safe illumination.
+    \item \textbf{Payload \& Water-Use Dynamics:} Assuming a planning estimate of 25 litres per shower across 40 daily sessions:
+    \begin{equation}
+        \text{Daily Water Demand} = 40\text{ sessions} \times 25\text{ litres} = 1,000\text{ litres} \ (\approx 1,000\text{ kg}).
+    \end{equation}
+    This 1,000-litre volume is an unverified planning assumption. Including water tanks, cubicles, equipment, fuel, and crew, the operating payload reaches $\approx 1,750\,\text{kg}$, requiring a vehicle chassis rated for at least 2.0 to 2.5 tonnes.
+    \item \textbf{Conversion Cost Uncertainty:} A standard 14.5-ft aluminium lorry body benchmark is listed at LKR 1,050,000 in Sri Lanka. However, converting the interior into two fully waterproof, partitioned bathing cubicles with dedicated plumbing and greywater tanks requires LKR 1.2--2.0 million. Detailed engineering designs and axle-load certifications must precede vehicle acquisition.
+\end{itemize}
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Key Technical Challenges and Practical Solutions}
+\label{tab:technical_challenges}
+\begin{tabularx}{\textwidth}{L{0.32\textwidth}Y}
+\toprule
+\textbf{Technical Challenge} & \textbf{Practical Engineering Solution} \\
+\midrule
+Liquid dynamic sloshing during transit & Internal longitudinal and transverse tank baffles; low center-of-gravity chassis mounting. \\
+Pump or electrical system failure & Parallel backup 12V pump on a bypass valve; auxiliary battery with solar and shore-power charging. \\
+Drain blockages and foul tank odors & Accessible hair strainers, P-traps on drain lines, and charcoal-filtered external tank vents. \\
+Excess moisture and slipping hazards & Continuous mechanical exhaust fans, hydrophobic wall panels, and non-slip rubber floor mats. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Existing International Mobile Shower Solutions}
+International case studies confirm that mobile personal hygiene facilities are technically viable and operationally proven across various community and disaster-relief contexts (Figure~\ref{fig:international_benchmarks}):
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item \textbf{Mobile Showers Atlanta (USA):} Operates a 21-foot custom-built mobile trailer equipped with private hygiene suites containing showers, sinks, and amenities, visiting communities on a scheduled timetable.
+    \item \textbf{ShowerBox (UK):} Utilizes a converted trailer to provide secure, private shower stalls in London, originally designed to serve approximately 35 clients each Saturday.
+    \item \textbf{ShowerUp (USA):} Deploys mobile shower trailers providing hot water, personal hygiene supplies, and emergency sanitation in urban and disaster-relief operations.
+    \item \textbf{United Way of the Mid-Willamette Valley (USA):} Operates a mobile hygiene trailer featuring three private shower stalls with integrated water heating and onboard wastewater collection.
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,height=3.8cm,keepaspectratio]{img_atlanta.jpg}
+    \caption{Mobile Showers Atlanta (USA): 21-ft hygiene trailer.}
+    \label{fig:atlanta}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,height=3.8cm,keepaspectratio]{img_showerbox.jpg}
+    \caption{ShowerBox (UK): Converted shower trailer.}
+    \label{fig:showerbox}
+\end{subfigure}
+\vspace{0.4em}
+\begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,height=3.8cm,keepaspectratio]{img_showerup.jpg}
+    \caption{ShowerUp (USA): Mobile shower outreach unit.}
+    \label{fig:showerup}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth,height=3.8cm,keepaspectratio]{img_unitedway.jpg}
+    \caption{United Way (USA): 3-stall mobile shower trailer.}
+    \label{fig:unitedway}
+\end{subfigure}
+\caption{International Operational Benchmarks for Mobile Shower Facilities}
+\label{fig:international_benchmarks}
+\end{figure}
+
+\textbf{Key Takeaway from International Precedents:} These international models prove that self-contained mobile shower units with private cubicles, onboard water tanks, water heating, and wastewater retention are technically functional and road-tested. However, these programs are primarily subsidized charitable or municipal initiatives. While they establish technical feasibility, they do not prove commercial market feasibility or that Sri Lankan working women will pay an out-of-pocket fee for daytime mobile bathing.
+
+% ------------------------------------------------------------------------------
+\subsection{Operational Feasibility}
+
+The service operates on predictable, fixed routes rather than ad-hoc roving transit, establishing partnerships with employers to ensure parking access and customer reach.
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item \textbf{Employer Engagement \& Route Scheduling:} Formal permissions are obtained from workplace managers (factories, industrial parks, and agricultural estates) to park on-site during designated daytime hours (midday lunch breaks and shift changeovers). Fixed schedules build customer trust and routine.
+    \item \textbf{Bookings \& Queue Management:} Users reserve 15-minute slots via a simple WhatsApp or phone SMS system, or physical tokens distributed via workplace welfare committees. Each slot permits a 10-minute shower and changing time with a 3--5 minute cleaning window.
+    \item \textbf{Cleaning \& Hygiene Protocols:} The cubicle is disinfected between users: contact surfaces are sprayed with disinfectant, floors squeegeed, and soap restocked. A thorough chemical washdown is conducted at the end of each operating day.
+    \item \textbf{Water Replenishment \& Disposal:} Freshwater (1,000 L/day) is refilled daily from verified municipal or commercial sources. Greywater is collected in sealed tanks and emptied into approved municipal sewerage points or licensed industrial treatment facilities; street or storm drain dumping is strictly prohibited.
+    \item \textbf{Staffing Structure:} The pilot operates with a two-person team: one driver/operator (advertised wage benchmark LKR 92,500) and one female attendant (LKR 55,000), plus statutory contributions and allowances (LKR 22,000). The female attendant is essential to ensure user safety, privacy, and thorough sanitation.
+    \item \textbf{Operational Capacity Considerations:} With two cubicles operating on a 15-minute turnaround cycle, achieving 47 to 60 bathing sessions per day requires 6.0 to 7.5 hours of continuous high utilization. Because workplace break windows are concentrated, maintaining this throughput represents an operational bottleneck that requires careful scheduling and shift synchronization.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+\subsection{Market Feasibility}
+
+Market demand is treated as an open hypothesis requiring empirical confirmation rather than an established fact.
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item \textbf{Target Customer Segments:} (1) Female plantation workers living in estate line rooms with scarce private washing facilities; (2) Female apparel and factory workers in Free Trade Zones facing long commutes and crowded boarding accommodations; and (3) Women working in outdoor, municipal, or agricultural roles lacking on-site amenities.
+    \item \textbf{Behavioral Validation Questions:} Research must verify why prospective customers cannot bathe conveniently at home at night (e.g., water cuts, safety concerns at communal outdoor taps after dark) and whether daytime mobile bathing solves their real need without conflicting with work shifts or personal habits.
+\end{itemize}
+
+\subsubsection{Market Survey and Validation Framework}
+To replace assumptions with verified field evidence before committing capital, the group has developed a preliminary survey and interview framework:
+
+\paragraph{Potential Customer Survey ($n = 50$--$100$ Working Women):}
+The field questionnaire focuses on five essential empirical dimensions:
+\begin{enumerate}[label=\arabic*., itemsep=0.1em]
+    \item \textit{Current Sanitary Conditions:} Adequacy, water availability, cleanliness, and privacy of existing domestic and workplace washing facilities.
+    \item \textit{Evening Domestic Bathing Constraints:} Specific obstacles preventing comfortable night bathing at home (e.g., evening municipal water cuts, lengthy queues at community wells/standpipes, lack of private cubicles, safety risks walking to external water points after dark).
+    \item \textit{Practical Daytime Feasibility:} Feasibility of carrying a towel, personal toiletries, and a change of clothes to work; whether factory break intervals allow sufficient personal time.
+    \item \textit{Willingness to Pay (WTP):} User acceptance of the proposed \textbf{LKR 250 fee}, tested against lower and higher price thresholds (LKR 100, LKR 150, LKR 200, LKR 300).
+    \item \textit{Expected Usage Frequency:} Projected demand frequency (daily, 2--3 times weekly, or during specific weather/work conditions).
+\end{enumerate}
+
+\paragraph{Employer and Workplace Manager Interviews ($n \ge 5$ Facilities):}
+Semi-structured interviews with HR directors, welfare officers, and plantation managers will evaluate:
+\begin{enumerate}[label=\arabic*., itemsep=0.1em]
+    \item Site access, designated parking clearance, and security arrangements during working hours.
+    \item On-site utility sharing (availability of fresh tube-well water refills and 230V shore electricity hookups).
+    \item Willingness to co-fund or subsidize employee bathing sessions via a \textbf{monthly corporate retainer of LKR 100,000} under CSR or employee welfare budgets.
+\end{enumerate}
+
+\paragraph{Low-Cost Prototype Pilot:}
+Following survey analysis, a 2-week ground-based modular pilot (utilizing a temporary privacy enclosure, water tote, and pump) will be operated at a single partner workplace to verify actual user throughput, water consumption rates, and real-world satisfaction without incurring vehicle debt.
+
+% ------------------------------------------------------------------------------
+\subsection{Financial Feasibility}
+
+The financial evaluation is structured around updated market benchmarks in Sri Lanka (November 2026). Costs exclude commercial loan financing interest, asset depreciation, and corporate income taxes.
+
+\subsubsection{Initial Capital Investment (CapEx)}
+Table~\ref{tab:initial_capex} details the benchmarked items and estimated budget ranges for a two-cubicle truck conversion.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Preliminary Capital Investment: Real-Price References and Assumptions}
+\label{tab:initial_capex}
+\begin{tabularx}{\textwidth}{L{0.36\textwidth}rY}
+\toprule
+\textbf{Investment Item} & \textbf{Budget (LKR)} & \textbf{Basis / Market Reference} \\
+\midrule
+Used box-body truck (14.5-ft) & 4,650,000 & Listed price: 14.5-ft Mitsubishi Canter, Colombo. \\
+Custom cubicles \& truck conversion & 1,200,000--2,000,000 & Benchmark: aluminium body listed at LKR 1.05M; cubicles require waterproofing, partitions, doors, drainage. \\
+Clean-water tank (1,000 L) & 24,500--30,100 & Listed retail prices: Arpico and S-Lon tanks. \\
+Water pump and fittings & 30,000--60,000 & Assumption: 12V pump sizing, pressure valves, fittings. \\
+Wastewater tank and installation & 120,000--250,000 & Dedicated vehicle-mounted greywater tank and safe outlets. \\
+PVC pipes and plumbing materials & 25,000--60,000 & 1-inch PVC pipe listed at LKR 950 per 6m length. \\
+Two shower units \& water heating & 80,000--160,000 & Retail listings: shower heaters LKR 35,000--85,000 each. \\
+Waterproof flooring, walls \& sealing & 150,000--300,000 & Materials and labour for two wet-area cubicles. \\
+Electrical, lighting \& ventilation & 100,000--250,000 & Auxiliary wiring, battery, inverter, solar, fans, LED. \\
+Registration, inspection \& setup & 100,000--200,000 & RMV conversion endorsement and initial compliance. \\
+Initial working capital & 300,000--500,000 & Planning allowance: cash buffer for early operations. \\
+Contingency allowance & 650,000--900,000 & Allowance for fabrication overruns and unforeseen repairs. \\
+\midrule
+\textbf{Estimated Investment Range} & \textbf{7,450,000--9,360,000} & Estimated range across supplier configurations. \\
+\textbf{Base-Case Capital Investment} & \textbf{8,500,000} & \textbf{Adopted base-case investment assumption.} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The base-case initial investment is adopted at \textbf{LKR 8.5 million}, reflecting realistic market prices for an older commercial truck, custom sanitary fabrication, and a necessary contingency buffer.
+
+\subsubsection{Monthly Operating Expenditure (OpEx)}
+Table~\ref{tab:monthly_opex} presents the revised monthly operating budget across 26 operating days per month.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Preliminary Monthly Operating Budget (26 Operating Days per Month)}
+\label{tab:monthly_opex}
+\begin{tabularx}{\textwidth}{L{0.36\textwidth}rY}
+\toprule
+\textbf{Expense Category} & \textbf{Monthly Cost (LKR)} & \textbf{Basis / Market Reference} \\
+\midrule
+Driver's salary & 92,500 & Advertised salary benchmark for drivers in Sri Lanka. \\
+Female attendant's salary & 55,000 & Market wage estimate for attendant/sanitation duties. \\
+Employer contributions \& staff allowance & 22,000 & Statutory EPF/ETF contributions and staff allowance. \\
+Diesel fuel & 85,000 & $\approx 214\,\text{L/month}$ at LKR 397/L (effective Nov 2026), 26 days. \\
+Water supply & 25,000 & Sourcing $\approx 1,000\,\text{L/day}$ from municipal/commercial supply. \\
+Wastewater collection \& disposal & 15,000 & Discharge fees to approved municipal/licensed WWTP. \\
+Cleaning and hygiene supplies & 20,000 & Hospital-grade disinfectant, soap, sanitizers, consumables. \\
+Electricity or heating energy & 20,000 & Shore power, solar maintenance, and heating fuel. \\
+Vehicle maintenance and repairs & 25,000 & Crucial reserve for maintaining an older used truck. \\
+Insurance, licences and administration & 20,000 & Commercial passenger liability, road tax, and permits. \\
+Phone, booking and marketing & 10,000 & WhatsApp business gateway, phone lines, printed tokens. \\
+Miscellaneous expenses & 15,000 & Unforeseen operating contingencies and minor repairs. \\
+\midrule
+\textbf{Total Monthly Operating Budget} & \textbf{404,500} & \textbf{Adopted Base-Case: LKR 405,000 / month.} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The base-case operating expenditure is established at \textbf{LKR 405,000 per month} (rounded from LKR 404,500). Fuel costs represent a significant recurring variable, heavily dependent on route length and traffic conditions.
+
+% ------------------------------------------------------------------------------
+\subsection{Revenue Model and Break-Even Analysis}
+
+The venture employs a dual revenue model: individual user fees charged per session and monthly B2B service retainers contracted with partner employers.
+
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item \textbf{Customer Charge:} Proposed at \textbf{LKR 250 per bathing session} (subject to willingness-to-pay validation).
+    \item \textbf{Operating Schedule:} 26 operating days per month.
+    \item \textbf{Target Employer Contract:} \textbf{LKR 100,000 per month} for guaranteed workplace visits and employee access.
+    \item \textbf{Monthly Operating Budget:} \textbf{LKR 405,000 per month}.
+\end{itemize}
+
+\subsubsection{Revenue Sensitivity by Daily Usage Volume}
+Table~\ref{tab:revenue_sensitivity} models monthly revenue and operating surplus across daily throughput volumes from 20 to 60 sessions per day (assuming the LKR 100,000 employer retainer is secured).
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Monthly Revenue and Operating Surplus Sensitivity by Daily Volume (LKR)}
+\label{tab:revenue_sensitivity}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X >{\raggedleft\arraybackslash}X >{\raggedleft\arraybackslash}X >{\raggedleft\arraybackslash}X >{\raggedleft\arraybackslash}X >{\raggedleft\arraybackslash}X}
+\toprule
+\textbf{Daily Sessions} & \textbf{Customer Revenue} & \textbf{Employer Contract} & \textbf{Total Revenue} & \textbf{Monthly OpEx} & \textbf{Operating Surplus / (Loss)} \\
+\midrule
+20 & 130,000 & 100,000 & 230,000 & 405,000 & $-175,000$ \\
+30 & 195,000 & 100,000 & 295,000 & 405,000 & $-110,000$ \\
+40 & 260,000 & 100,000 & 360,000 & 405,000 & $-45,000$ \\
+50 & 325,000 & 100,000 & 425,000 & 405,000 & $+20,000$ \\
+60 & 390,000 & 100,000 & 490,000 & 405,000 & $+85,000$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsubsection{Break-Even Throughput Analysis}
+Assuming fixed monthly operating costs of LKR 405,000 and an employer contribution of LKR 100,000, the daily break-even session volume ($Q_{\text{daily}}^*$) is calculated as:
+\begin{align}
+Q_{\text{daily}}^* &= \frac{\text{Monthly OpEx} - \text{Employer Retainer}}{\text{Price per Session} \times \text{Operating Days}} \notag \\
+&= \frac{\text{LKR } 405,000 - \text{LKR } 100,000}{\text{LKR } 250 \times 26} = \frac{\text{LKR } 305,000}{\text{LKR } 6,500} \approx 46.92.
+\end{align}
+
+Rounding up, the business requires approximately \textbf{47 paid bathing sessions per day} to break even on an operating cash flow basis.
+
+\paragraph{Financial and Operational Implications:}
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item At 40 sessions per day (the technical benchmark for a 1,000-litre tank), the business incurs a monthly cash loss of LKR 45,000.
+    \item Achieving break-even (47 sessions/day) requires operating at near-maximum capacity, consuming approximately 1,175 litres of water daily.
+    \item Generating a meaningful operating surplus (LKR 20,000--85,000/month at 50--60 sessions/day) requires midday water refilling, rapid customer turnaround, and extended operating hours during shift changeovers.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+\subsection{Legal and Environmental Feasibility}
+
+Regulatory compliance involves multiple statutory bodies in Sri Lanka, requiring formal investigation:
+\begin{itemize}[leftmargin=1.5em, itemsep=0.15em]
+    \item \textbf{Vehicle \& Road Safety:} Vehicle structural modifications and gross weight limits require Department of Motor Traffic (RMV) inspection, tare certification, and commercial passenger liability insurance \textbf{[Source to be verified: Department of Motor Traffic]}.
+    \item \textbf{Public Health \& Site Access:} Local authority (Municipal Council/Pradeshiya Sabha) trade permits, Medical Officer of Health (MOH) / Public Health Inspector (PHI) sanitation oversight, and employer property clearances are required.
+    \item \textbf{Environmental Standards:} Water must meet SLS 614 potable standards. Untreated greywater discharge into drains is prohibited under Central Environmental Authority (CEA) rules; discharge agreements with approved municipal treatment plants or licensed waste contractors are mandatory. The need for a mobile Environmental Protection License (EPL) must also be verified \textbf{[Source to be verified: Central Environmental Authority]}.
+\end{itemize}
+
+% ------------------------------------------------------------------------------
+\subsection{Risk Assessment}
+
+Table~\ref{tab:risk_assessment} outlines the key operational, financial, and technical risks and their mitigation.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Key Risks and Proposed Mitigation Measures}
+\label{tab:risk_assessment}
+\begin{tabularx}{\textwidth}{L{0.25\textwidth}L{0.30\textwidth}Y}
+\toprule
+\textbf{Identified Risk} & \textbf{Potential Effect} & \textbf{Mitigation Strategy} \\
+\midrule
+Insufficient customer demand & Volume below 47 sessions/day creates ongoing operating cash deficits. & Conduct pre-launch worker surveys; secure anchor employer contracts; offer initial promotional trials. \\
+\addlinespace
+High vehicle conversion costs & Budget overruns exceed the LKR 8.5M startup capital baseline. & Obtain multiple builder quotes; use modular plumbing kits; consider leasing an existing truck chassis. \\
+\addlinespace
+Inadequate water storage & Tanks empty mid-shift, disrupting bookings and capping volume. & Install 25-litre push-metering valves; monitor digital tank levels; arrange midday refill points at factories. \\
+\addlinespace
+Wastewater disposal difficulties & Inability to legally discharge greywater causes operational halts. & Pre-arrange formal discharge agreements with municipal treatment plants or licensed contractors. \\
+\addlinespace
+Customer privacy \& safety fears & Low patronage due to concerns regarding personal security. & Employ an exclusively female attendant; install internal deadbolts; ensure fully opaque cubicle construction. \\
+\addlinespace
+Low customer affordability & Workers find LKR 250 too expensive relative to daily wages. & Partner with employers to subsidize 50--100\% of fees as a tax-deductible employee welfare benefit. \\
+\addlinespace
+Fuel inflation \& vehicle repairs & High diesel price (LKR 397/L) and older truck repairs raise costs. & Cluster routes within tight geographic zones; use solar auxiliary power; maintain strict preventative servicing logs. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% ------------------------------------------------------------------------------
+\subsection{Overall Feasibility Assessment}
+
+Table~\ref{tab:feasibility_summary} summarizes the feasibility findings across all evaluated dimensions.
+
+\begin{table}[htbp]
+\centering
+\small
+\caption{Overall Feasibility Assessment Summary}
+\label{tab:feasibility_summary}
+\begin{tabularx}{\textwidth}{L{0.24\textwidth}L{0.26\textwidth}Y}
+\toprule
+\textbf{Dimension} & \textbf{Preliminary Status} & \textbf{Summary Assessment} \\
+\midrule
+Technical Feasibility & \textbf{Technically Promising} & Relies on mature, off-the-shelf components; requires a $\ge 2.0$-tonne payload chassis to carry water weight. \\
+\addlinespace
+Operational Feasibility & \textbf{Operationally Practical} & Predictable routes, employer partnerships, and a female attendant make operations viable; high-volume turnaround is a bottleneck. \\
+\addlinespace
+Market Feasibility & \textbf{Market Demand Unconfirmed} & Sanitation needs exist, but willingness to pay LKR 250 requires confirmation through surveys ($n=50\text{--}100$). \\
+\addlinespace
+Financial Feasibility & \textbf{High Financial Risk} & Break-even requires 47 sessions/day at LKR 250 plus an LKR 100,000 monthly subsidy. High initial outlay (LKR 8.5M). \\
+\addlinespace
+Legal \& Environmental & \textbf{Subject to Verification} & Requires RMV vehicle modification approvals, local health clearance, and CEA-compliant disposal agreements. \\
+\addlinespace
+Social Impact & \textbf{Potentially Positive Impact} & Strong potential to advance dignity, personal health, and hygiene for underserved working women. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\paragraph{Conclusion and Next Steps:}
+While the mobile bathing station is technically practical and socially compelling, the updated cost research indicates that financial risk is substantial: initial capital outlay is estimated at \textbf{LKR 8.5 million}, monthly operating costs are \textbf{LKR 405,000}, and break-even demands approximately \textbf{47 paid sessions per day}. Consequently, \textbf{major capital commitments (vehicle acquisition and custom fabrication) should be deferred until demand and employer sponsorship are validated}. 
+
+The group recommends the following phased progression:
+\begin{enumerate}[label=\arabic*., itemsep=0.1em]
+    \item \textbf{Phase 1: Field Surveys and Employer Interviews (Months 1--2):} Complete surveys of 50--100 working women and interviews with at least five factory managers to evaluate willingness to pay at LKR 250 and firm interest in providing an LKR 100,000 monthly subsidy.
+    \item \textbf{Phase 2: Low-Cost Prototype Pilot (Months 3--4):} Test a temporary ground-based shower stall at a single partner workplace for two weeks to observe actual customer uptake, water usage, and turnaround times without incurring vehicle debt.
+    \item \textbf{Phase 3: Formal Vehicle Acquisition and Launch (Months 5+):} Proceed with vehicle purchase and fabrication only after securing verified customer demand, at least one signed employer service contract, and formal statutory clearances.
+\end{enumerate}
+
+\end{document}
